@@ -1,2 +1,4 @@
-# kata
-Code kata starting points.
+Coding Kata Starting Points
+===========================
+
+These are starting points for coding katas.
