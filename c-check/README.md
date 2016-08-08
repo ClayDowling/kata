@@ -34,20 +34,20 @@ build the target.  Let's look at the recipes for the other targets.
 
 ##### life
 
-This is a straight up recipe to build a final product called "life."  The recipe
-itself is rather cryptic, so I'll break it down for you.
+This is a straight up recipe to build a final product called "life."  The
+recipe itself is rather cryptic, so I'll break it down for you.
 
-  * `$(CC)` will expand to the compiler's executable.  On many systems there is
-  a program "cc" which is the C compiler.  But equally common is "gcc" for the
-  GNU C compiler, "clang" for the LLVM compiler used on OS X by default and as
-  an alternative by many other users.  This is actually an environment variable,
-  so you can change the compiler you want to use by setting the CC environment
-  variable in your shell.
+  * `$(CC)` will expand to the compiler's executable.  On many systems there
+    is a program "cc" which is the C compiler.  But equally common is "gcc"
+    for the GNU C compiler, "clang" for the LLVM compiler used on OS X by
+    default and as an alternative by many other users.  This is actually an
+    environment variable, so you can change the compiler you want to use by
+    setting the CC environment variable in your shell.
 
   * `$@` is the name of the target.  The `-o` option sets the name of the output
   file, so the output of the compile operation will be called "life"
 
-  * `$^` expands to the full list of dependencies listed for the target.  
+  * `$^` expands to the full list of dependencies listed for the target.
 
 ##### test
 
@@ -59,8 +59,8 @@ non-BSD systems as `bmake`.
 
 ##### clean
 
-Clean is a traditional target, and exists to clean up the folder into a pristine
-state.  This target does three things:
+Clean is a traditional target, and exists to clean up the folder into a
+pristine state.  This target does three things:
 
   * Executes the `clean` target in the test folder
   * Removes all files ending with `.o` in this folder.  The -f option keeps
@@ -69,11 +69,12 @@ state.  This target does three things:
 
 ##### all
 
-This target, which is the default, has no recipe, but does depend on the test
-and life targets.  It will first execute the "test" target.  If that succeeds, it
-will execute the "life" target.  It is important to put these in this order, so
-that no life target is built if the tests fail.  Because of that ordering, we
-are protected from creating a life target which fails its tests.
+This target, which is the default, has no recipe, but does depend on the
+test and life targets.  It will first execute the "test" target.  If that
+succeeds, it will execute the "life" target.  It is important to put these
+in this order, so that no life target is built if the tests fail.  Because
+of that ordering, we are protected from creating a life target which fails
+its tests.
 
 
 ## Further Reading
