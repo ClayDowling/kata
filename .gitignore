@@ -1,3 +1,7 @@
 **/build/
 *.iml
 *.swp
+.DS*
+*.o
+*.class
+*.txt.user*
