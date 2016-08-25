@@ -1,5 +1,6 @@
 **/build/
 *.iml
+.idea/
 *.swp
 .DS*
 *.o
