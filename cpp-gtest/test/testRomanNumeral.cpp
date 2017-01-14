@@ -42,6 +42,7 @@ public:
         tcase.push_back(make_tuple(999, "CMXCIX"));
         tcase.push_back(make_tuple(1000, "M"));
         tcase.push_back(make_tuple(3999, "MMMCMXCIX"));
+        tcase.push_back(make_tuple(3888, "MMMDCCCLXXXVIII"));
 
         return tcase;
     }
