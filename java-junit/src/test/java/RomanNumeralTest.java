@@ -34,6 +34,7 @@ public class RomanNumeralTest {
         return Arrays.asList(new Object[][] {
                 {1, "I"},
                 {2, "II"},
+                {3, "III"},
                 {5, "V"},
                 {7, "VII"},
                 {10, "X"}

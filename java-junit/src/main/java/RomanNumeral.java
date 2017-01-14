@@ -19,24 +19,21 @@ public class RomanNumeral {
     }
 
     public String toRoman(int value) {
-        RomanDigit digit = findSingleDigit(value);
+        int index = singleDigits.length - 1;
+        RomanDigit currentRoman;
         String result = "";
-        if (digit != null) {
-            result = result + digit.symbol;
-        } else {
 
+        while (value > 0) {
+            currentRoman = singleDigits[index];
 
-            switch (value) {
-                case 2:
-                    result = "II";
-                    break;
-                case 7:
-                    result =  "VII";
-                    break;
-                default:
-                    result = "undefined";
+            if (currentRoman.value <= value) {
+                value -= currentRoman.value;
+                result += currentRoman.symbol;
+            } else {
+                index--;
             }
         }
         return result;
     }
+
 }
