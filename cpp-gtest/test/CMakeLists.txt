@@ -4,10 +4,10 @@ include_directories(SYSTEM
 enable_testing()
 
 SET(TEST_SRC
-	testUnit.cpp)
+		testRomanNumeral.cpp)
 
 SET(UNIT_UNDER_TEST_SRC
-	../unit.cpp)
+		../RomanNumeral.cpp)
 
 SET(TEST_NAME ${PROJECT_NAME}-test)
 ADD_EXECUTABLE(${TEST_NAME}

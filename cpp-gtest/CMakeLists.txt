@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
-PROJECT(life)
+PROJECT(romannumeral)
 
 add_subdirectory(googletest)
 add_subdirectory(test)
 
 set(APP_SOURCE
-	unit.cpp unit.h)
+		RomanNumeral.cpp RomanNumeral.h)
 
 
 add_executable(${PROJECT_NAME}
