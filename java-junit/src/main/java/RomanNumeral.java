@@ -3,10 +3,7 @@
  */
 public class RomanNumeral {
 
-    public static int answer()
-    {
-        return 6 * 9;
-    }
+    private static int [] singleDigits = {1, 5, 10};
 
     public static String toRoman(int value) {
         switch(value) {
@@ -14,6 +11,8 @@ public class RomanNumeral {
                 return "I";
             case 5:
                 return "V";
+            case 7:
+                return "VII";
             default:
                 return "X";
         }

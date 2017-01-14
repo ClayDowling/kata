@@ -1,24 +1,40 @@
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 
+@RunWith(Parameterized.class)
 public class RomanNumeralTest {
 
-    @Test
-    public void one_return_I() {
-        assertEquals("I", RomanNumeral.toRoman(1));
+    private int testValue;
+    private String expectedValue;
+
+    public RomanNumeralTest(int input, String expected) {
+        testValue = input;
+        expectedValue = expected;
     }
 
     @Test
-    public void five_returns_V() {
-        assertEquals("V", RomanNumeral.toRoman(5));
+    public void toRoman() {
+        assertThat(RomanNumeral.toRoman(testValue), is(expectedValue));
     }
 
-    @Test
-    public void ten_returns_X() {
-        assertEquals("X", RomanNumeral.toRoman(10));
+    @Parameters
+    public static Collection arabicToRoman() {
+        return Arrays.asList(new Object[][] {
+                {1, "I"},
+                {2, "II"},
+                {5, "V"},
+                {7, "VII"},
+                {10, "X"}
+        });
     }
 
 }
