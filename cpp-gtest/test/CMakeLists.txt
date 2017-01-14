@@ -4,7 +4,7 @@ include_directories(SYSTEM
 enable_testing()
 
 SET(TEST_SRC
-		testRomanNumeral.cpp)
+		testRomanNumeral.cpp testRomanOutOfRange.cpp)
 
 SET(UNIT_UNDER_TEST_SRC
 		../RomanNumeral.cpp)

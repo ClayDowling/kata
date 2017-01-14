@@ -1,4 +1,5 @@
 #include <cstring>
+#include <stdexcept>
 #include "RomanNumeral.h"
 
 static RomanDigit singleDigit[] = {
@@ -19,6 +20,11 @@ static RomanDigit singleDigit[] = {
 };
 
 string RomanNumeral::toRoman(int value) {
+    // validate range before doing anything else
+    if (value <= 0 || value >= 4000) {
+        throw out_of_range("");
+    }
+
     string result = ""; // REDUNDANT
     int index = sizeof(singleDigit)/sizeof(RomanDigit) - 1;
     RomanDigit currentDigit = singleDigit[index];
