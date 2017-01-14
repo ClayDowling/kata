@@ -27,6 +27,9 @@ public:
         tcase.push_back(make_tuple(14, "XIV"));
         tcase.push_back(make_tuple(19, "XIX"));
         tcase.push_back(make_tuple(20, "XX"));
+        tcase.push_back(make_tuple(40, "XL"));
+        tcase.push_back(make_tuple(49, "XLIX"));
+        tcase.push_back(make_tuple(50, "L"));
 
         return tcase;
     }

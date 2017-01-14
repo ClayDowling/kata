@@ -6,7 +6,9 @@ static RomanDigit singleDigit[] = {
         {.value = 4, .symbol = "IV"},
         {.value = 5, .symbol = "V"},
         {.value = 9, .symbol = "IX"},
-        {.value = 10, .symbol = "X"}
+        {.value = 10, .symbol = "X"},
+        {.value = 40, .symbol = "XL"},
+        {.value = 50, .symbol = "L"}
 };
 
 string RomanNumeral::toRoman(int value) {
