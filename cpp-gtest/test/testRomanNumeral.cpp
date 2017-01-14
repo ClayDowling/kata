@@ -30,7 +30,9 @@ public:
         tcase.push_back(make_tuple(40, "XL"));
         tcase.push_back(make_tuple(49, "XLIX"));
         tcase.push_back(make_tuple(50, "L"));
-
+        tcase.push_back(make_tuple(90, "XC"));
+        tcase.push_back(make_tuple(99, "XCIX"));
+        tcase.push_back(make_tuple(100, "C"));
         return tcase;
     }
 };
