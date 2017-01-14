@@ -1,16 +1,20 @@
 #ifndef _ROMAN_NUMERAL_H_
 #define _ROMAN_NUMERAL_H_
 
+#include <string>
+
+
+using namespace std;
 
 class RomanDigit {
 public:
     int value;
-    char symbol;
+    string symbol;
 };
 
 class RomanNumeral {
 public:
-char *toRoman(int value);
+string toRoman(int value);
 };
 
 #endif

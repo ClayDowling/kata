@@ -19,9 +19,13 @@ public:
         tcase.push_back(make_tuple(1, "I"));
         tcase.push_back(make_tuple(2, "II"));
         tcase.push_back(make_tuple(3, "III"));
+        tcase.push_back(make_tuple(4, "IV"));
         tcase.push_back(make_tuple(5, "V"));
         tcase.push_back(make_tuple(7, "VII"));
+        tcase.push_back(make_tuple(9, "IX"));
         tcase.push_back(make_tuple(10, "X"));
+        tcase.push_back(make_tuple(14, "XIV"));
+        tcase.push_back(make_tuple(19, "XIX"));
         tcase.push_back(make_tuple(20, "XX"));
 
         return tcase;
