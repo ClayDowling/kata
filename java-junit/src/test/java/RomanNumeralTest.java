@@ -16,4 +16,9 @@ public class RomanNumeralTest {
         assertEquals("V", RomanNumeral.toRoman(5));
     }
 
+    @Test
+    public void ten_returns_X() {
+        assertEquals("X", RomanNumeral.toRoman(10));
+    }
+
 }

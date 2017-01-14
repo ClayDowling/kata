@@ -9,13 +9,14 @@ public class RomanNumeral {
     }
 
     public static String toRoman(int value) {
-        if (value == 1) {
-            return "I";
+        switch(value) {
+            case 1:
+                return "I";
+            case 5:
+                return "V";
+            default:
+                return "X";
         }
-        else {
-            return "V";
-        }
-        
     }
 
 }
