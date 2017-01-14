@@ -3,5 +3,11 @@
  */
 public class RomanDigit {
     int value;
-    char symbol;
+    String symbol;
+
+    public RomanDigit(int v, String s) {
+        value = v;
+        symbol = s;
+    }
+
 }

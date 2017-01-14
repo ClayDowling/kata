@@ -15,15 +15,18 @@ public class RomanNumeralTest {
 
     private int testValue;
     private String expectedValue;
+    private RomanNumeral roman;
 
     public RomanNumeralTest(int input, String expected) {
         testValue = input;
         expectedValue = expected;
+
+        roman = new RomanNumeral();
     }
 
     @Test
     public void toRoman() {
-        assertThat(RomanNumeral.toRoman(testValue), is(expectedValue));
+        assertThat(roman.toRoman(testValue), is(expectedValue));
     }
 
     @Parameters

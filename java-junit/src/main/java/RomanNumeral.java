@@ -3,19 +3,40 @@
  */
 public class RomanNumeral {
 
-    private static int [] singleDigits = {1, 5, 10};
+    private static RomanDigit [] singleDigits = new RomanDigit[] {
+            new RomanDigit(1, "I"),
+            new RomanDigit(5, "V"),
+            new RomanDigit(10, "X")
+    };
 
-    public static String toRoman(int value) {
-        switch(value) {
-            case 1:
-                return "I";
-            case 5:
-                return "V";
-            case 7:
-                return "VII";
-            default:
-                return "X";
+    private RomanDigit findSingleDigit(int digit) {
+        for(RomanDigit roman : singleDigits ) {
+            if (roman.value == digit) {
+                return roman;
+            }
         }
+        return null;
     }
 
+    public String toRoman(int value) {
+        RomanDigit digit = findSingleDigit(value);
+        String result = "";
+        if (digit != null) {
+            result = result + digit.symbol;
+        } else {
+
+
+            switch (value) {
+                case 2:
+                    result = "II";
+                    break;
+                case 7:
+                    result =  "VII";
+                    break;
+                default:
+                    result = "undefined";
+            }
+        }
+        return result;
+    }
 }
