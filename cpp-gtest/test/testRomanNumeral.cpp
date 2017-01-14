@@ -33,6 +33,10 @@ public:
         tcase.push_back(make_tuple(90, "XC"));
         tcase.push_back(make_tuple(99, "XCIX"));
         tcase.push_back(make_tuple(100, "C"));
+        tcase.push_back(make_tuple(400, "CD"));
+        tcase.push_back(make_tuple(499, "CDXCIX"));
+        tcase.push_back(make_tuple(500, "D"));
+
         return tcase;
     }
 };

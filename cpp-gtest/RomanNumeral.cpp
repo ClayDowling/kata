@@ -10,7 +10,9 @@ static RomanDigit singleDigit[] = {
         {.value = 40, .symbol = "XL"},
         {.value = 50, .symbol = "L"},
         {.value = 90, .symbol = "XC"},
-        {.value = 100, .symbol = "C"}
+        {.value = 100, .symbol = "C"},
+        {.value = 400, .symbol = "CD"},
+        {.value = 500, .symbol = "D"}
 
 };
 
