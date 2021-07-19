@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata", "kata\kata.csproj", "{333BA95D-0B52-4BCE-8941-9CC3BA7495F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "katatest", "katatest\katatest.csproj", "{87F14F44-62AA-46F5-B462-1C7E77B936F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333BA95D-0B52-4BCE-8941-9CC3BA7495F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333BA95D-0B52-4BCE-8941-9CC3BA7495F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333BA95D-0B52-4BCE-8941-9CC3BA7495F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333BA95D-0B52-4BCE-8941-9CC3BA7495F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F14F44-62AA-46F5-B462-1C7E77B936F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F14F44-62AA-46F5-B462-1C7E77B936F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F14F44-62AA-46F5-B462-1C7E77B936F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F14F44-62AA-46F5-B462-1C7E77B936F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
