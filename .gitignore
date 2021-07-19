@@ -1,8 +1,11 @@
 **/build/
 *.iml
-.idea/
+**/.idea/
 *.swp
 .DS*
 *.o
 *.class
 *.txt.user*
+**/.vscode
+**/bin
+**/obj
