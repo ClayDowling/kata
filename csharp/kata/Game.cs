@@ -22,8 +22,12 @@ namespace kata
                 case 0:
                 case 1:
                     return false;
-                default:
+                case 2:
+                    return cellstate;
+                case 3:
                     return true;
+                default:
+                    return false;
             }
         }
     }

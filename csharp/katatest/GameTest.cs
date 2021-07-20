@@ -55,5 +55,30 @@ namespace katatest
         {
             Game.IsAlive(neighbors, true).Should().BeTrue();
         }
+
+        [Fact]
+        public void IsAlive_DeadCellWithTwoNeighbors_ReturnsFalse()
+        {
+            Game.IsAlive(2, false).Should().BeFalse();
+        }
+
+        [Fact]
+        public void IsAlive_DeadOrLiveCellWithThreeNeighbors_ReturnsTrue()
+        {
+            Game.IsAlive(3, true).Should().BeTrue();
+            Game.IsAlive(3, false).Should().BeTrue();
+        }
+
+        [Theory]
+        [InlineData(4)]
+        [InlineData(5)]
+        [InlineData(6)]
+        [InlineData(7)]
+        [InlineData(8)]
+        public void IsAlive_WhenOverpopulated_ReturnsFalse(int neighbors)
+        {
+            Game.IsAlive(neighbors, true).Should().BeFalse();
+            Game.IsAlive(neighbors, false).Should().BeFalse();
+        }
     }
 }
