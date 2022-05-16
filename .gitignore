@@ -2,6 +2,7 @@
 *.iml
 **/.idea/
 *.swp
+*~
 .DS*
 *.o
 *.class

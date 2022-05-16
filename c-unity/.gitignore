@@ -1,0 +1,6 @@
+*.a
+*.o
+*.exe
+life
+life-test
+build/

@@ -1,0 +1,24 @@
+include_directories(SYSTEM
+	${CMAKE_SOURCE_DIR}/googletest/googlemock/include)
+
+enable_testing()
+
+SET(TEST_SRC
+	testUnit.c)
+
+SET(UNIT_UNDER_TEST_SRC
+	../unit.c)
+
+SET(TEST_NAME ${PROJECT_NAME}-test)
+ADD_EXECUTABLE(${TEST_NAME}
+	${TEST_SRC}
+	${UNIT_UNDER_TEST_SRC}
+	main.c
+	)
+
+SET_PROPERTY(TARGET ${TEST_NAME} PROPERTY C_STANDARD 11)
+TARGET_LINK_LIBRARIES(${TEST_NAME}
+	unity)
+
+TARGET_COMPILE_FEATURES(${TEST_NAME} PUBLIC cxx_override)
+ADD_TEST(UnitTest ${TEST_NAME})
